@@ -59,8 +59,15 @@ export const portfolioData = {
       name: "CodeChef",
       username: "Add your CodeChef handle",
       href: "https://www.codechef.com/",
-      metric: "Add rating here",
+      metric: "1600+ rating",
       blurb: "Competitive programming profile and long-form contest track.",
+    },
+    {
+      name: "Codeforces",
+      username: "Add your Codeforces handle",
+      href: "https://codeforces.com/",
+      metric: "1600+ rating",
+      blurb: "Contest problem solving, rating growth, and algorithm practice.",
     },
     {
       name: "GitHub",

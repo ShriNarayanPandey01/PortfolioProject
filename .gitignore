@@ -130,3 +130,4 @@ dist
 # Agents
 .agents/
 .gemini/
+graphify-out/
