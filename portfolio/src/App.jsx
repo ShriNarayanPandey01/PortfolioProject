@@ -307,31 +307,41 @@ function App() {
           <div className="experience-timeline">
             {data.experience.map((item) => (
               <article key={`${item.company}-${item.role}`} className="experience-row">
-                <div className="experience-place">
-                  <h3>{item.company}</h3>
-                  <p>{item.period}</p>
-                </div>
                 <div className="experience-dot" aria-hidden="true" />
-                <div className="experience-role">
-                  <h3>{item.role}</h3>
-                  <p>{item.location}</p>
-                  <ul>
-                    {item.highlights.map((highlight) => (
-                      <li key={highlight}>{highlight}</li>
-                    ))}
-                  </ul>
+                <div className="experience-card">
+                  <div className="experience-card-header">
+                    <div className="experience-title-info">
+                      <h3 className="experience-role-title">{item.role}</h3>
+                      <span className="experience-company">{item.company}</span>
+                    </div>
+                    <div className="experience-meta">
+                      <span className="experience-period">{item.period}</span>
+                      <span className="experience-location">
+                        <svg className="meta-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        {item.location}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="experience-body">
+                    <ul className="experience-highlights">
+                      {item.highlights.map((highlight) => (
+                        <li key={highlight} className="experience-highlight-item">{highlight}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </article>
             ))}
           </div>
         </section>
 
+
         <section id="projects" className="scroll-section section-block projects-block" data-scroll-section>
           <section className="services-section projects-carousel-section">
             <SectionTitle
               eyebrow="Projects"
               title="Selected work in a horizontal showcase."
-              text="Your project section now uses the same dark card styling as the old services block."
+              text="A curated selection of engineering projects across backend systems, AI, and distributed computing."
               fullWidth
               action={
                 <a className="header-chip header-chip-accent" href={data.socialLinks[1]?.href} target="_blank" rel="noreferrer">

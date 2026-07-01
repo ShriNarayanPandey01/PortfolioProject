@@ -131,3 +131,22 @@ dist
 .agents/
 .gemini/
 graphify-out/
+
+# Spring Boot / Maven / Java
+**/target/
+*.jar
+*.war
+*.zip
+*.tar.gz
+.mvn/wrapper/maven-wrapper.jar
+
+# Java IDEs
+.idea/
+*.iml
+*.iws
+.settings/
+.classpath
+.project
+
+# Dynamic data (contact messages storage)
+data/messages.json
