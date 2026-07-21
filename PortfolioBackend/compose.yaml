@@ -9,5 +9,5 @@ services:
       - "4000:4000"
     environment:
       - PORT=4000
-      - BYOSHELL_API_URL=${BYOSHELL_API_URL:-https://codecrafters-shell-rust.onrender.com}
+      - BYOSHELL_API_URL=${BYOSHELL_API_URL}
       - BYOSHELL_API_KEY=${BYOSHELL_API_KEY}
