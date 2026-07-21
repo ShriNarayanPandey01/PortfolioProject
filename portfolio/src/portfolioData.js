@@ -1,115 +1,328 @@
 export const fallbackPortfolioData = {
-  name: "John Doe (Fallback)",
-  shortName: "John",
-  title:
-    "Demo Software Engineer — Backend is currently offline.",
-  email: "johndoe@example.com",
-  phone: "+1 (555) 019-9000",
-  location: "Silicon Valley, CA",
-  resumeLabel: "Demo Resume",
-  resumeHref: "#",
-  socialLinks: [
+  "name": "Shri Narayan Pandey",
+  "shortName": "Shri",
+  "title": "Software Engineer",
+  "email": "shrinarayanp03@gmail.com",
+  "phone": "+91 90458 93362",
+  "location": "Hyderabad, India",
+  "resumeLabel": "Resume",
+  "resumeHref": "/resume.pdf",
+  "socialLinks": [
     {
-      label: "LinkedIn",
-      href: "https://linkedin.com",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/shrinarayanpandey01"
     },
     {
-      label: "GitHub",
-      href: "https://github.com",
+      "label": "GitHub",
+      "href": "https://github.com/ShriNarayanPandey01"
     },
     {
-      label: "Email",
-      href: "mailto:johndoe@example.com",
-    },
+      "label": "Email",
+      "href": "mailto:shrinarayanp03@gmail.com"
+    }
   ],
-  heroStats: [
-    { value: "1000+", label: "Demo Rating" },
-    { value: "Top 99%", label: "Demo Competitions" },
-    { value: "0", label: "Microservices Platform" },
-  ],
-  intro:
-    "This is placeholder dummy data displayed because the Spring Boot backend is offline. Start the backend on port 4000 to dynamically populate this portfolio with the real data.",
-  about:
-    "This is a fallback placeholder. When the backend service is running and accessible on port 4000, this card will be dynamically replaced with the real portfolio owner's profile details.",
-  skills: [
-    "Dummy Skill 1",
-    "Dummy Skill 2",
-    "Dummy Skill 3",
-    "Dummy Skill 4",
-    "Dummy Skill 5",
-  ],
-  codingProfiles: [
+  "heroStats": [
     {
-      name: "LeetCode",
-      username: "johndoe_leetcode",
-      href: "https://leetcode.com/",
-      metric: "1200+ rating",
-      blurb: "Placeholder problem solving profile.",
+      "label": "LeetCode Rating",
+      "value": "1700+ improving"
     },
     {
-      name: "GitHub",
-      username: "johndoe_github",
-      href: "https://github.com/",
-      metric: "Demo repositories",
-      blurb: "Placeholder open-source profile.",
+      "label": "Teams Outperformed in Amazon ML Challenge",
+      "value": "50k+"
     },
-  ],
-  experience: [
     {
-      role: "Demo Software Engineer",
-      company: "Offline Company Ltd",
-      period: "Jan 2026 - Present",
-      location: "Remote, Earth",
-      highlights: [
-        "This is dummy experience item 1 to demonstrate timeline layout when backend is not responding.",
-        "This is dummy experience item 2 to demonstrate timeline layout when backend is not responding.",
+      "label": "Microservices Platform Exposure",
+      "value": "10+"
+    }
+  ],
+  "intro": "Building scalable web applications with modern technologies. Passionate about clean code, user experience, and leveraging AI to solve complex problems.",
+  "about": "Currently working as a Software Engineer at HashedIn by Deloitte, where I build backend services with FastAPI and Google ADK. I care about well-structured systems, low-level design, code reviews, and making complicated platforms easier for teams to evolve over time.",
+  "skills": [
+    "FastAPI",
+    "Python",
+    "Java",
+    "Spring Boot",
+    "Rust",
+    "Git",
+    "Linux",
+    "Microservices",
+    "REST APIs",
+    "Redis",
+    "PostgreSQL",
+    "LangChain",
+    "LangGraph",
+    "Google ADK",
+    "Kafka",
+    "Docker",
+    "GCP",
+    "System Design"
+  ],
+  "codingProfiles": [
+    {
+      "name": "LeetCode",
+      "username": "ShriNarayanPandey01",
+      "href": "https://leetcode.com/ShriNarayanPandey01/",
+      "subtitle": "Data structures & algorithm mastery",
+      "color": "orange",
+      "stats": [
+        {
+          "label": "Solved",
+          "value": "650+"
+        },
+        {
+          "label": "Rank",
+          "value": "126,786"
+        },
+        {
+          "label": "Rating",
+          "value": "1700+ improving"
+        }
+      ]
+    },
+    {
+      "name": "CodeChef",
+      "username": "ShriNarayanPandey01",
+      "href": "https://www.codechef.com/users/ShriNarayanPandey01",
+      "subtitle": "Multi-domain skill certifications",
+      "color": "green",
+      "stats": [
+        {
+          "label": "Stars",
+          "value": "3 Star"
+        },
+        {
+          "label": "Rating",
+          "value": "1600+ improving"
+        },
+        {
+          "label": "Global Rank",
+          "value": "21,678"
+        }
+      ]
+    },
+    {
+      "name": "GitHub",
+      "username": "ShriNarayanPandey01",
+      "href": "https://github.com/ShriNarayanPandey01",
+      "subtitle": "Open-source projects & contributions",
+      "color": "purple",
+      "stats": [
+        {
+          "label": "Repositories",
+          "value": "10+"
+        },
+        {
+          "label": "Contributions",
+          "value": "100+"
+        },
+        {
+          "label": "Followers",
+          "value": "15+"
+        }
+      ]
+    }
+  ],
+  "codingStats": [
+    {
+      "label": "Problems Solved",
+      "value": "1000+",
+      "color": "orange",
+      "icon": "code"
+    },
+    {
+      "label": "Contests Participated",
+      "value": "10+",
+      "color": "blue",
+      "icon": "swords"
+    },
+    {
+      "label": "Years Coding",
+      "value": "4+",
+      "color": "green",
+      "icon": "clock"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer 1",
+      "company": "HashedIn by Deloitte",
+      "period": "Dec 2025 - Present",
+      "location": "Hyderabad, India",
+      "description": "Developing backend services using FastAPI and Google ADK for an enterprise platform with agentic workflow integration.",
+      "stack": [
+        "FastAPI",
+        "Python",
+        "Redis",
+        "PostgreSQL",
+        "Google ADK"
       ],
+      "highlights": [
+        "Designed schemas across 4 microservices in a 10+ service ecosystem with clearer ownership and reduced coupling.",
+        "Implemented Redis-based session management to cut repeated database lookups and improve request latency.",
+        "Contribute to LLD discussions, sprint planning, and peer reviews to keep the system maintainable as it grows."
+      ]
     },
     {
-      role: "Demo Developer Intern",
-      company: "Acme Corp",
-      period: "Jun 2025 - Dec 2025",
-      location: "Remote, Earth",
-      highlights: [
-        "Constructed dummy REST APIs using placeholder parameters.",
-        "Participated in mock code reviews and virtual team standups.",
+      "role": "Software Developer Intern",
+      "company": "HashedIn by Deloitte",
+      "period": "Oct 2025 - Dec 2025",
+      "location": "Bengaluru, India",
+      "description": "Built backend training deliverables across FastAPI, Spring Boot, Java, LangChain, LangGraph, React, and Node.js.",
+      "stack": [
+        "FastAPI",
+        "LangChain",
+        "LangGraph",
+        "React",
+        "Node.js"
       ],
-    },
-  ],
-  projects: [
-    {
-      name: "Demo Project Alpha",
-      category: "Frontend / React",
-      description:
-        "A placeholder React client demonstrating the responsiveness and grid styles of the project grid.",
-      stack: ["React", "CSS Grid", "Vite"],
+      "highlights": [
+        "Led backend development for an AI-powered research assistant with FastAPI and LangChain-based orchestration.",
+        "Worked through code reviews and design walkthroughs with senior engineers, then converted to full-time."
+      ]
     },
     {
-      name: "Demo Project Beta",
-      category: "Backend / Node",
-      description:
-        "A mock database wrapper designed to showcase clean cards layout when dynamic content is offline.",
-      stack: ["Node.js", "Express"],
-    },
-  ],
-  backendProjects: [
-    {
-      name: "Demo API Gateway",
-      purpose: "Proxy routing validation",
-      summary:
-        "This is a fallback mockup showing how backend system specifications look on the expanded projects panel.",
-      highlights: [
-        "Placeholder dynamic route forwarding",
-        "Mock security certificate validation",
+      "role": "Software Engineer Intern",
+      "company": "Telaverge Communications",
+      "period": "Dec 2024 - Jun 2025",
+      "location": "Bengaluru, India",
+      "description": "Supported backend development and API testing for telecom software on Linux-based infrastructure.",
+      "stack": [
+        "Python",
+        "Bash",
+        "Linux",
+        "REST APIs",
+        "Git"
       ],
-      stack: ["Spring Boot", "Zuul", "Eureka"],
-      status: "Offline Mode",
+      "highlights": [
+        "Automated 10+ repetitive tasks with Python and Bash, reducing manual effort for operational workflows.",
+        "Learned enterprise SDLC, production support, and distributed-system troubleshooting in a practical setting."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "BYO Shell",
+      "category": "Core CS / Systems",
+      "description": "A fully-featured POSIX-inspired shell written from scratch in Rust. Includes a custom lexer, parser, AST execution engine, pipelines, I/O redirection, background jobs, and an HTTP API.",
+      "stack": [
+        "Rust",
+        "POSIX",
+        "Lexer/Parser",
+        "HTTP API"
+      ],
+      "image": "/projects/byo_shell.png",
+      "codeUrl": "https://github.com/ShriNarayanPandey01/codecrafters-shell-rust",
+      "demoUrl": "/shell",
+      "isShell": true,
+      "accent": "purple"
     },
+    {
+      "name": "AI Research Assistant",
+      "category": "Generative AI / Backend",
+      "description": "A research-focused platform that fetches and summarizes the latest news on user-defined topics using agentic orchestration.",
+      "stack": [
+        "FastAPI",
+        "LangChain",
+        "LangGraph",
+        "Google ADK",
+        "GCP"
+      ],
+      "image": "/projects/ai_research_assistant.png",
+      "codeUrl": "",
+      "demoUrl": "",
+      "accent": "teal"
+    },
+    {
+      "name": "Kafka from Scratch",
+      "category": "Distributed Systems",
+      "description": "A Java reimplementation of Kafka internals covering wire protocol parsing, log segments, producer-consumer cycles, and concurrency mechanics.",
+      "stack": [
+        "Java",
+        "Sockets",
+        "Multithreading",
+        "I/O Buffering"
+      ],
+      "image": "/projects/kafka_from_scratch.png",
+      "codeUrl": "https://github.com/ShriNarayanPandey01/kafka-from-scratch",
+      "demoUrl": "",
+      "accent": "blue"
+    },
+    {
+      "name": "Custom Language Interpreter",
+      "category": "Core CS",
+      "description": "A Python-built interpreter with a handwritten lexer, recursive-descent parser, AST generation, scoping, control flow, and function execution.",
+      "stack": [
+        "Python",
+        "Parsing",
+        "AST",
+        "Runtime Design"
+      ],
+      "image": "/projects/custom_interpreter.png",
+      "codeUrl": "https://github.com/ShriNarayanPandey01/custom-interpreter",
+      "demoUrl": "",
+      "accent": "orange"
+    },
+    {
+      "name": "AI Travel Assistant",
+      "category": "LLM Product",
+      "description": "An assistant for flights, hotels, and itinerary planning using tool-calling and conversational memory for grounded multi-turn responses.",
+      "stack": [
+        "LangChain",
+        "Prompt Engineering",
+        "Tool Calling"
+      ],
+      "image": "/projects/ai_travel_assistant.png",
+      "codeUrl": "https://github.com/ShriNarayanPandey01/ai-travel-assistant",
+      "demoUrl": "",
+      "accent": "purple"
+    }
   ],
-  achievements: [
-    "Ranked in top 1% of simulated programmers worldwide.",
-    "Completed virtual full-stack deployment certification.",
+  "backendProjects": [
+    {
+      "slug": "portfolio-api",
+      "name": "Portfolio API",
+      "purpose": "Content delivery and contact workflow",
+      "summary": "The website is backed by an API that serves profile data, project sections, coding links, and contact submissions in a structured way.",
+      "highlights": [
+        "REST endpoints for portfolio sections",
+        "JSON-backed persistence for contact messages",
+        "Easy extension for admin panels or a database later"
+      ],
+      "stack": [
+        "Node.js",
+        "Express",
+        "REST",
+        "File System"
+      ],
+      "repoUrl": "",
+      "status": "Active"
+    },
+    {
+      "slug": "backend-showcase-model",
+      "name": "Backend Project Showcase",
+      "purpose": "Expandable backend-focused content model",
+      "summary": "A separate backend showcase makes space for APIs, microservices, distributed systems work, and architecture-heavy builds beyond the general project cards.",
+      "highlights": [
+        "Separate schema for backend-centric work",
+        "Supports stack, summary, impact, and status metadata",
+        "Useful for system design and infra-oriented portfolio growth"
+      ],
+      "stack": [
+        "API Design",
+        "Content Modeling",
+        "Schema Planning"
+      ],
+      "repoUrl": "",
+      "status": "Ready for expansion"
+    }
   ],
-  contactText:
-    "This is placeholder contact text. Start the backend to enable contact submissions and dynamically fetch actual details.",
+  "achievements": [
+    "Ranked 88th out of 50,000+ teams in the Amazon ML Challenge 2024.",
+    "Achieved 1700+ rating on LeetCode with strong contest performance.",
+    "Converted from intern to full-time Software Engineer 1 at HashedIn by Deloitte."
+  ],
+  "contactText": "I am interested in backend engineering, distributed systems, applied AI, and product-focused software roles. Feel free to reach out if you want to collaborate or discuss opportunities."
 };
+
+export const portfolioData = fallbackPortfolioData;
+export default portfolioData;

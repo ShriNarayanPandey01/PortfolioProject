@@ -1,7 +1,7 @@
 {
   "name": "Shri Narayan Pandey",
   "shortName": "Shri",
-  "title": "Software Engineer building backend systems, agentic workflows, and products that scale with clarity.",
+  "title": "Software Engineer",
   "email": "shrinarayanp03@gmail.com",
   "phone": "+91 90458 93362",
   "location": "Hyderabad, India",
@@ -22,16 +22,29 @@
     }
   ],
   "heroStats": [
-    { "value": "1700+", "label": "LeetCode Rating" },
-    { "value": "50k+", "label": "Teams Outperformed in Amazon ML Challenge" },
-    { "value": "10+", "label": "Microservices Platform Exposure" }
+    {
+      "label": "LeetCode Rating",
+      "value": "1700+ improving"
+    },
+    {
+      "label": "Teams Outperformed in Amazon ML Challenge",
+      "value": "50k+"
+    },
+    {
+      "label": "Microservices Platform Exposure",
+      "value": "10+"
+    }
   ],
-  "intro": "I enjoy working on systems where strong engineering fundamentals meet practical AI. My focus is backend architecture, clean APIs, distributed workflows, and building products that feel reliable under real usage.",
+  "intro": "Building scalable web applications with modern technologies. Passionate about clean code, user experience, and leveraging AI to solve complex problems.",
   "about": "Currently working as a Software Engineer at HashedIn by Deloitte, where I build backend services with FastAPI and Google ADK. I care about well-structured systems, low-level design, code reviews, and making complicated platforms easier for teams to evolve over time.",
   "skills": [
     "FastAPI",
     "Python",
     "Java",
+    "Spring Boot",
+    "Rust",
+    "Git",
+    "Linux",
     "Microservices",
     "REST APIs",
     "Redis",
@@ -47,31 +60,86 @@
   "codingProfiles": [
     {
       "name": "LeetCode",
-      "username": "Update your handle",
-      "href": "https://leetcode.com/",
-      "metric": "1700+ rating",
-      "blurb": "Problem solving, contest performance, and DSA consistency."
+      "username": "ShriNarayanPandey01",
+      "href": "https://leetcode.com/ShriNarayanPandey01/",
+      "subtitle": "Data structures & algorithm mastery",
+      "color": "orange",
+      "stats": [
+        {
+          "label": "Solved",
+          "value": "650+"
+        },
+        {
+          "label": "Rank",
+          "value": "126,786"
+        },
+        {
+          "label": "Rating",
+          "value": "1700+ improving"
+        }
+      ]
     },
     {
       "name": "CodeChef",
-      "username": "Add your CodeChef handle",
-      "href": "https://www.codechef.com/",
-      "metric": "1600+ rating",
-      "blurb": "Competitive programming profile and long-form contest track."
-    },
-    {
-      "name": "Codeforces",
-      "username": "Add your Codeforces handle",
-      "href": "https://codeforces.com/",
-      "metric": "1600+ rating",
-      "blurb": "Contest problem solving, rating growth, and algorithm practice."
+      "username": "ShriNarayanPandey01",
+      "href": "https://www.codechef.com/users/ShriNarayanPandey01",
+      "subtitle": "Multi-domain skill certifications",
+      "color": "green",
+      "stats": [
+        {
+          "label": "Stars",
+          "value": "3 Star"
+        },
+        {
+          "label": "Rating",
+          "value": "1600+ improving"
+        },
+        {
+          "label": "Global Rank",
+          "value": "21,678"
+        }
+      ]
     },
     {
       "name": "GitHub",
       "username": "ShriNarayanPandey01",
       "href": "https://github.com/ShriNarayanPandey01",
-      "metric": "Projects and experiments",
-      "blurb": "Code, backend experiments, and portfolio source updates."
+      "subtitle": "Open-source projects & contributions",
+      "color": "purple",
+      "stats": [
+        {
+          "label": "Repositories",
+          "value": "10+"
+        },
+        {
+          "label": "Contributions",
+          "value": "100+"
+        },
+        {
+          "label": "Followers",
+          "value": "15+"
+        }
+      ]
+    }
+  ],
+  "codingStats": [
+    {
+      "label": "Problems Solved",
+      "value": "1000+",
+      "color": "orange",
+      "icon": "code"
+    },
+    {
+      "label": "Contests Participated",
+      "value": "10+",
+      "color": "blue",
+      "icon": "swords"
+    },
+    {
+      "label": "Years Coding",
+      "value": "4+",
+      "color": "green",
+      "icon": "clock"
     }
   ],
   "experience": [
@@ -80,8 +148,15 @@
       "company": "HashedIn by Deloitte",
       "period": "Dec 2025 - Present",
       "location": "Hyderabad, India",
+      "description": "Developing backend services using FastAPI and Google ADK for an enterprise platform with agentic workflow integration.",
+      "stack": [
+        "FastAPI",
+        "Python",
+        "Redis",
+        "PostgreSQL",
+        "Google ADK"
+      ],
       "highlights": [
-        "Developing backend services using FastAPI and Google ADK for an enterprise platform with agentic workflow integration.",
         "Designed schemas across 4 microservices in a 10+ service ecosystem with clearer ownership and reduced coupling.",
         "Implemented Redis-based session management to cut repeated database lookups and improve request latency.",
         "Contribute to LLD discussions, sprint planning, and peer reviews to keep the system maintainable as it grows."
@@ -92,8 +167,15 @@
       "company": "HashedIn by Deloitte",
       "period": "Oct 2025 - Dec 2025",
       "location": "Bengaluru, India",
+      "description": "Built backend training deliverables across FastAPI, Spring Boot, Java, LangChain, LangGraph, React, and Node.js.",
+      "stack": [
+        "FastAPI",
+        "LangChain",
+        "LangGraph",
+        "React",
+        "Node.js"
+      ],
       "highlights": [
-        "Built backend training deliverables across FastAPI, Spring Boot, Java, LangChain, LangGraph, React, and Node.js.",
         "Led backend development for an AI-powered research assistant with FastAPI and LangChain-based orchestration.",
         "Worked through code reviews and design walkthroughs with senior engineers, then converted to full-time."
       ]
@@ -103,8 +185,15 @@
       "company": "Telaverge Communications",
       "period": "Dec 2024 - Jun 2025",
       "location": "Bengaluru, India",
+      "description": "Supported backend development and API testing for telecom software on Linux-based infrastructure.",
+      "stack": [
+        "Python",
+        "Bash",
+        "Linux",
+        "REST APIs",
+        "Git"
+      ],
       "highlights": [
-        "Supported backend development and API testing for telecom software on Linux-based infrastructure.",
         "Automated 10+ repetitive tasks with Python and Bash, reducing manual effort for operational workflows.",
         "Learned enterprise SDLC, production support, and distributed-system troubleshooting in a practical setting."
       ]
@@ -112,28 +201,80 @@
   ],
   "projects": [
     {
+      "name": "BYO Shell",
+      "category": "Core CS / Systems",
+      "description": "A fully-featured POSIX-inspired shell written from scratch in Rust. Includes a custom lexer, parser, AST execution engine, pipelines, I/O redirection, background jobs, and an HTTP API.",
+      "stack": [
+        "Rust",
+        "POSIX",
+        "Lexer/Parser",
+        "HTTP API"
+      ],
+      "image": "/projects/byo_shell.png",
+      "codeUrl": "https://github.com/ShriNarayanPandey01/codecrafters-shell-rust",
+      "demoUrl": "/shell",
+      "isShell": true,
+      "accent": "purple"
+    },
+    {
       "name": "AI Research Assistant",
       "category": "Generative AI / Backend",
       "description": "A research-focused platform that fetches and summarizes the latest news on user-defined topics using agentic orchestration.",
-      "stack": ["FastAPI", "LangChain", "LangGraph", "Google ADK", "GCP"]
+      "stack": [
+        "FastAPI",
+        "LangChain",
+        "LangGraph",
+        "Google ADK",
+        "GCP"
+      ],
+      "image": "/projects/ai_research_assistant.png",
+      "codeUrl": "",
+      "demoUrl": "",
+      "accent": "teal"
     },
     {
       "name": "Kafka from Scratch",
       "category": "Distributed Systems",
       "description": "A Java reimplementation of Kafka internals covering wire protocol parsing, log segments, producer-consumer cycles, and concurrency mechanics.",
-      "stack": ["Java", "Sockets", "Multithreading", "I/O Buffering"]
+      "stack": [
+        "Java",
+        "Sockets",
+        "Multithreading",
+        "I/O Buffering"
+      ],
+      "image": "/projects/kafka_from_scratch.png",
+      "codeUrl": "https://github.com/ShriNarayanPandey01/kafka-from-scratch",
+      "demoUrl": "",
+      "accent": "blue"
     },
     {
       "name": "Custom Language Interpreter",
       "category": "Core CS",
       "description": "A Python-built interpreter with a handwritten lexer, recursive-descent parser, AST generation, scoping, control flow, and function execution.",
-      "stack": ["Python", "Parsing", "AST", "Runtime Design"]
+      "stack": [
+        "Python",
+        "Parsing",
+        "AST",
+        "Runtime Design"
+      ],
+      "image": "/projects/custom_interpreter.png",
+      "codeUrl": "https://github.com/ShriNarayanPandey01/custom-interpreter",
+      "demoUrl": "",
+      "accent": "orange"
     },
     {
       "name": "AI Travel Assistant",
       "category": "LLM Product",
       "description": "An assistant for flights, hotels, and itinerary planning using tool-calling and conversational memory for grounded multi-turn responses.",
-      "stack": ["LangChain", "Prompt Engineering", "Tool Calling"]
+      "stack": [
+        "LangChain",
+        "Prompt Engineering",
+        "Tool Calling"
+      ],
+      "image": "/projects/ai_travel_assistant.png",
+      "codeUrl": "https://github.com/ShriNarayanPandey01/ai-travel-assistant",
+      "demoUrl": "",
+      "accent": "purple"
     }
   ],
   "backendProjects": [
@@ -147,7 +288,12 @@
         "JSON-backed persistence for contact messages",
         "Easy extension for admin panels or a database later"
       ],
-      "stack": ["Node.js", "Express", "REST", "File System"],
+      "stack": [
+        "Node.js",
+        "Express",
+        "REST",
+        "File System"
+      ],
       "repoUrl": "",
       "status": "Active"
     },
@@ -161,7 +307,11 @@
         "Supports stack, summary, impact, and status metadata",
         "Useful for system design and infra-oriented portfolio growth"
       ],
-      "stack": ["API Design", "Content Modeling", "Schema Planning"],
+      "stack": [
+        "API Design",
+        "Content Modeling",
+        "Schema Planning"
+      ],
       "repoUrl": "",
       "status": "Ready for expansion"
     }
