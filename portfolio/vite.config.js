@@ -3,7 +3,8 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
-  const targetUrl = env.VITE_BACKEND_URL;
+  const rawUrl = (env.VITE_BACKEND_URL);
+  const targetUrl = rawUrl;
 
   return {
     plugins: [react()],

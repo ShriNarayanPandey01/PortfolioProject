@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 
-const BACKEND_BASE = import.meta.env.VITE_BACKEND_URL || "";
-const PRIMARY_SHELL_API = BACKEND_BASE ? `${BACKEND_BASE.replace(/\/$/, "")}/api/shell` : "/api/shell";
+const rawBackendUrl = (import.meta.env.VITE_BACKEND_URL || "").trim().replace(/^["']|["']$/g, "");
+const PRIMARY_SHELL_API = rawBackendUrl ? `${rawBackendUrl.replace(/\/$/, "")}/api/shell` : "/api/shell";
 
 const SUGGESTED_COMMANDS = [
   { cmd: "echo Hello, world!", desc: "Print text to stdout" },
