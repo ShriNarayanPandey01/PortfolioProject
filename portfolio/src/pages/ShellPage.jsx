@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 
-const PRIMARY_SHELL_API = "/api/shell";
-const DIRECT_SHELL_API = "https://codecrafters-shell-rust.onrender.com";
+const BACKEND_BASE = import.meta.env.VITE_BACKEND_URL || "";
+const PRIMARY_SHELL_API = BACKEND_BASE ? `${BACKEND_BASE.replace(/\/$/, "")}/api/shell` : "/api/shell";
 
 const SUGGESTED_COMMANDS = [
   { cmd: "echo Hello, world!", desc: "Print text to stdout" },
@@ -40,7 +40,6 @@ export default function ShellPage() {
 
   const outputRef = useRef(null);
   const inputRef = useRef(null);
-  const activeEndpointRef = useRef(PRIMARY_SHELL_API);
 
   // Auto-scroll on new output
   useEffect(() => {
@@ -61,18 +60,6 @@ export default function ShellPage() {
         const res = await fetch(`${PRIMARY_SHELL_API}/health`);
         if (res.ok) {
           setShellStatus("online");
-          activeEndpointRef.current = PRIMARY_SHELL_API;
-          return;
-        }
-      } catch (_err) {
-        // Fallback to direct Render endpoint
-      }
-
-      try {
-        const res = await fetch(`${DIRECT_SHELL_API}/health`);
-        if (res.ok) {
-          setShellStatus("online");
-          activeEndpointRef.current = DIRECT_SHELL_API;
         } else {
           setShellStatus("offline");
         }
@@ -107,31 +94,13 @@ export default function ShellPage() {
     }
 
     try {
-      let endpoint = activeEndpointRef.current || PRIMARY_SHELL_API;
-      let res = await fetch(`${endpoint}/execute`, {
+      const res = await fetch(`${PRIMARY_SHELL_API}/execute`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(
-          endpoint === DIRECT_SHELL_API
-            ? { command: trimmed, session_id: "portfolio" }
-            : { command: trimmed }
-        ),
+        body: JSON.stringify({ command: trimmed }),
       });
-
-      if (!res.ok && endpoint === PRIMARY_SHELL_API) {
-        // Try fallback to direct Render API
-        endpoint = DIRECT_SHELL_API;
-        activeEndpointRef.current = DIRECT_SHELL_API;
-        res = await fetch(`${DIRECT_SHELL_API}/execute`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ command: trimmed, session_id: "portfolio" }),
-        });
-      }
 
       const data = await res.json();
 
