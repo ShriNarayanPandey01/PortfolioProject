@@ -265,6 +265,9 @@ export default function ShellPage() {
           <div className="shell-output-area" ref={outputRef}>
             {showWelcome && (
               <div className="shell-welcome-banner">
+                <div className="shell-mobile-banner-title">
+                  <span>🐚 BYO SHELL</span> — POSIX Engine in Rust
+                </div>
                 <pre className="shell-ascii-art">
 {`  ____   __   ______    ____   ______  _    _  ______  _      _     
  |  _ \\  \\ \\ / /  _ \\  / ___| |  ____|| |  | ||  ____|| |    | |    
@@ -277,10 +280,10 @@ export default function ShellPage() {
                   Welcome to <strong>BYO Shell</strong> — a POSIX-style shell engine written from scratch in <strong>Rust</strong>.
                 </p>
                 <p className="shell-welcome-sub">
-                  Type a command below or click a suggestion from the sidebar to get started.
+                  Type a command below or tap a suggestion to execute.
                 </p>
                 <div className="shell-quick-tips">
-                  <span>Tip: try <code>pwd</code>, <code>echo hello</code>, <code>declare FOO=bar</code>, or <code>echo $FOO</code></span>
+                  <span>Tip: try <code>pwd</code>, <code>echo hello</code>, or <code>declare FOO=bar</code></span>
                 </div>
               </div>
             )}
@@ -303,11 +306,26 @@ export default function ShellPage() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               disabled={isRunning}
-              placeholder={isRunning ? "Executing..." : "Type a command and press Enter..."}
+              placeholder={isRunning ? "Executing..." : "Type command..."}
               spellCheck={false}
               autoComplete="off"
             />
-            {isRunning && <span className="shell-spinner" />}
+            {isRunning ? (
+              <span className="shell-spinner" />
+            ) : (
+              <button
+                className="shell-run-btn"
+                onClick={() => {
+                  executeCommand(input);
+                  setInput("");
+                }}
+                disabled={!input.trim()}
+                title="Execute Command"
+                aria-label="Run command"
+              >
+                Run ↵
+              </button>
+            )}
           </div>
         </div>
 

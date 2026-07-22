@@ -14,7 +14,7 @@ export default function HeroSection({ data, scrolled, codingHighlights }) {
           <div className="hero-top-row">
             <div className="hero-copy">
               <h1>
-                Hello, I&apos;m <span>{data.name}</span>.<br />
+                Hello, I&apos;m <span className="hero-name">{data.name}</span>.<br className="hero-br-desktop" />
                 Software Engineer
               </h1>
 
